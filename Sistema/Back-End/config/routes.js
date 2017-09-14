@@ -8,6 +8,6 @@ module.exports = (server)=>{
 
     //Routes API
 
-    const billiCycleService = require('../API/BilliCycles/BilliCycleServices')
-    billiCycleService.register(router,'/billiCycles')
+    const billingCycleService = require('../API/BillingCycles/BillingCycleServices')
+    billingCycleService.register(router,'/billingCycles')
 }
