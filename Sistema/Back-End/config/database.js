@@ -1,3 +1,3 @@
 const mongoose = require('mongoose')
-
-module.exports = mongoose.connect('mongodb://localhost/db_finance')
+mongoose.Promise = global.Promise;
+module.exports = mongoose.connect('mongodb://localhost/db_finance',{useMongoClient : true})
